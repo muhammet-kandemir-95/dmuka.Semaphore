@@ -2,7 +2,7 @@
 
 Demo : [Download Project](https://github.com/muhammet-kandemir-95/dmuka.Semaphore/archive/master.zip)
 
- Uygulama sunucusunda çok fazla sayıda işlemi belli bir sayıdaki "Thread" 'ler yönetmenizi sağlar. Böylelikle sunucuda aynı anda yürütülen işlemlerin sayısı her zaman belli olacaktır.
+ Uygulama sunucusunda çok fazla sayıda işlemi belli bir sayıdaki "Thread" 'ler ile yönetmenizi sağlar. Böylelikle sunucuda aynı anda yürütülen işlemlerin sayısı her zaman belli olacaktır.
 
 ## Public Variables
 
