@@ -11,7 +11,8 @@ namespace dmuka.Semaphore.TestsConsoleApp
             Console.WriteLine("Welcome dmuka.Semaphore Tests!");
 
             // Create instance new semphore
-            ActionQueue semaphore = new ActionQueue(4);
+            // This instance will have 4 core(Thread)
+            ActionQueue semaphore = new ActionQueue(coreCount: 4);
             // Start semaphore as async
             semaphore.Start();
 
