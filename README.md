@@ -29,19 +29,19 @@ public bool Started { get; }
 ### Start
  Aktif instance işlemini başlatır.
 ```csharp
-void Start()
+public void Start()
 ```
  
 ### AddAction
  Aktif instance işlemindeki kuyruğa yeni bir action ekler. Daha önceden başlatılması veya başlatılmaması önemli değildir.
 ```csharp
-void AddAction(Action action)
+public void AddAction(Action action)
 ```
  
 ### Dispose
  Aktif instance işlemini "Dispose" eder.
 ```csharp
-void Dispose()
+public void Dispose()
 ```
 
 ## Örnek Kullanım
