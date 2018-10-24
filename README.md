@@ -2,24 +2,24 @@
 
 Demo : [Download Project](https://github.com/muhammet-kandemir-95/dmuka.Semaphore/archive/master.zip)
 
- Uygulama sunucusunda çok fazla sayıda işlemi belli bir sayıdaki "Thread" 'ler ile yönetmenizi sağlar. Böylelikle sunucuda aynı anda yürütülen işlemlerin sayısı her zaman belli olacaktır.
+ You can manage multiple "Thread" on application server using this library. So the "Thread Count" on server is always fix.
 
 ## Public Variables
 
 ### CoreCount
- Aynı anda yürütülen "Thread" sayısını belirler.
+ "Thread Count" for actions on server.
 ```csharp
 public int CoreCount { get; }
 ```
 
 ### Disposed
- Aktif instance daha önceden "Dispose" oldumu.
+ Is the current instance dispose?
 ```csharp
 public bool Disposed { get; }
 ```
 
 ### Started
- Aktif instance daha önceden başlatıldımı.
+ Was the current instance start?.
 ```csharp
 public bool Started { get; }
 ```
@@ -27,24 +27,24 @@ public bool Started { get; }
 ## Public Methods
 
 ### Start
- Aktif instance işlemini başlatır.
+ This is for start to current instance
 ```csharp
 public void Start()
 ```
  
 ### AddAction
- Aktif instance işlemindeki kuyruğa yeni bir action ekler. Daha önceden başlatılması veya başlatılmaması önemli değildir.
+ The current instance add to queue. 
 ```csharp
 public void AddAction(Action action)
 ```
  
 ### Dispose
- Aktif instance işlemini "Dispose" eder.
+ Is the current instance dispose?
 ```csharp
 public void Dispose()
 ```
 
-## Örnek Kullanım
+## Example Usage
 
 ```csharp
 using System;
