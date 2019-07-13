@@ -121,10 +121,7 @@ namespace dmuka.Semaphore
                 throw new ObjectDisposedException("ActionQueue");
 
             if (this.CoreCount > 1)
-            {
-                lock (this._actions)
-                    this._actions.Enqueue(action);
-            }
+                this._actions.Enqueue(action);
             else
                 action();
         }
