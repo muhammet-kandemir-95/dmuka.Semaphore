@@ -137,8 +137,7 @@ namespace dmuka.Semaphore
             this._disposed = true;
             lock (this._threads)
             {
-                foreach (var thread in this._threads)
-                    thread.Abort();
+                this._threads.Clear();
             }
             lock (this._actions)
             {
